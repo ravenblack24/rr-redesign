@@ -4,16 +4,14 @@
     padding: 1em;
 
     &__container {
-
         @media(min-width: 48em) {
             display: flex;
             flex-wrap: wrap;
             max-width: 960px; 
-            margin: 0 auto;
+            margin: 1.75em auto;
         }
 
         &__block {
-        
             padding: 1em;
             text-align: center;
     
@@ -29,18 +27,19 @@
                 padding: 1em ;
                 flex: 0 0 100%;
                 max-width: 100%;
+
+                h3 {
+                    margin-top:0;
+                    margin-bottom: 0.3em;
+                    font-weight: $fw-b;
+                }
+        
+                p {
+                    font-size: 0.8rem;
+                }
             }
     
-    
-            h3 {
-                margin-top:0;
-                margin-bottom: 0.3em;
-                font-weight: $fw-b;
-            }
-    
-            p {
-                font-size: 0.8rem;
-            }
+        
         }
 
 

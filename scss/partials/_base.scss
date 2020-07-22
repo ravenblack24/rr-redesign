@@ -48,7 +48,11 @@ h3 {
     font-family: $ff-body;
     font-size: 1rem;
     text-transform: uppercase;
-    color: $green;
+    color: $brand-green;
+
+    @media(min-width: 64em) {
+        font-size: 1.5rem;
+    }
 }
 
 h4 {

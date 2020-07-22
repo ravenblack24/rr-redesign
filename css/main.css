@@ -345,7 +345,10 @@ h3 {
   font-family: "Open Sans", sans-serif;
   font-size: 1rem;
   text-transform: uppercase;
-  color: #85D23F; }
+  color: #6CB42A; }
+  @media (min-width: 64em) {
+    h3 {
+      font-size: 1.5rem; } }
 
 h4 {
   font-family: "Open Sans", sans-serif;
@@ -418,7 +421,8 @@ p {
   height: 16.8125em; }
   @media (min-width: 48em) {
     .hero__container {
-      min-height: 30em; } }
+      min-height: 30em;
+      padding-bottom: 2em; } }
   .hero__container__mainintro {
     margin-bottom: 0.25em; }
   .hero__container__intro {
@@ -443,7 +447,7 @@ p {
       display: flex;
       flex-wrap: wrap;
       max-width: 960px;
-      margin: 0 auto; } }
+      margin: 1.75em auto; } }
   .quicklinks__container__block {
     padding: 1em;
     text-align: center; }
@@ -458,9 +462,9 @@ p {
       padding: 1em;
       flex: 0 0 100%;
       max-width: 100%; }
-    .quicklinks__container__block h3 {
-      margin-top: 0;
-      margin-bottom: 0.3em;
-      font-weight: 700; }
-    .quicklinks__container__block p {
-      font-size: 0.8rem; }
+      .quicklinks__container__block__content h3 {
+        margin-top: 0;
+        margin-bottom: 0.3em;
+        font-weight: 700; }
+      .quicklinks__container__block__content p {
+        font-size: 0.8rem; }
