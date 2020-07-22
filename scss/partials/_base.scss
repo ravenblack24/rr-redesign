@@ -1,0 +1,68 @@
+body {
+    color: $dark-gray;
+    font-family: $ff-body;
+    line-height: 1.6;
+    font-size: 16px;
+    background-color: $white;
+}
+
+img {
+    max-width: 100%;
+}
+
+h1, h2, p {
+    margin-top: 0;
+    margin-bottom: 1em;
+}
+
+h1 {
+    font-family: $ff-heading;
+    color: $white;
+    line-height: 1;
+    font-size: 3.125rem;
+    text-transform: uppercase;
+    font-weight: $fw-b;
+}
+
+h2 {
+    font-family: $ff-heading;
+    color: $green;
+    font-size: 1.5rem;
+}
+
+h3 {
+    font-family: $ff-body;
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    color: $green;
+}
+
+h4 {
+    font-family: $ff-body;
+    font-size: 1.125rem;
+    color: $white;
+}
+
+p {
+    font-size: 1rem;
+    color: $dark-gray;
+}
+
+/* Button link styles */
+
+@mixin link-button($color: $white, $width: 20em, $padding: 0.4rem, $font-size: 1.2rem) {
+    border: 1px solid $color;
+    color: $color;
+    width: $width;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: $padding;
+    font-size: $font-size;
+    margin: 0 auto;
+}
+
+@mixin link-button-hover($color: $green) {
+    border: 1px solid $color;
+    color: $color;
+    outline: none;
+}

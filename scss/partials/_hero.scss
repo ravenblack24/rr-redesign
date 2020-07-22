@@ -1,0 +1,40 @@
+.hero {
+    width: 100%;
+    margin: 0 auto;
+
+    &__container {
+        background-image: url(../../img/hero.PNG);
+        background-size: cover;
+        padding: 2.5em;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        text-align: center;
+        min-height: 20rem;
+
+        &__mainintro {
+            margin-bottom: 0.2em;
+        }
+
+        &__intro {
+            color: $white;
+            width: 90%;
+            margin: 0 auto;
+            margin-bottom: 0.9em;
+        }
+
+        &__cta {
+            @include link-button;
+            width: 6.7rem; 
+            margin: 0 auto;
+
+            &:hover,
+            &:focus {
+                @include link-button-hover;
+            }
+        }
+    }
+
+ 
+}
+
