@@ -319,12 +319,18 @@ h1, h2, p {
   margin-bottom: 1em; }
 
 h1 {
-  font-family: "Raleway", sans-serif;
+  font-family: "Open Sans", sans-serif;
   color: #fff;
   line-height: 1;
-  font-size: 3.125rem;
+  font-size: 2rem;
   text-transform: uppercase;
   font-weight: 700; }
+  @media (min-width: 40em) {
+    h1 {
+      font-size: 3.125rem; } }
+  @media (min-width: 77.5em) {
+    h1 {
+      font-size: 4rem; } }
 
 h2 {
   font-family: "Raleway", sans-serif;
@@ -343,40 +349,76 @@ h4 {
   color: #fff; }
 
 p {
-  font-size: 1rem;
+  font-size: 0.89rem;
   color: #525252; }
+  @media (min-width: 40em) {
+    p {
+      font-size: 1.25rem; } }
+  @media (min-width: 77.5em) {
+    p {
+      font-size: 1.5rem; } }
 
 /* Button link styles */
+.header {
+  background-color: #6CB42A;
+  min-height: 3.625em;
+  display: flex;
+  flex-direction: row;
+  padding: 0.75em 0 0em 1.5em; }
+  @media (min-width: 48em) {
+    .header {
+      padding: 1em 0 0.5em 4em; } }
+  .header__logo {
+    width: 6.5em; }
+    @media (min-width: 48em) {
+      .header__logo {
+        width: 10em; } }
+    @media (min-width: 77.5em) {
+      .header__logo {
+        width: 10.625em; } }
+
 .hero {
   width: 100%;
   margin: 0 auto; }
   .hero__container {
     background-image: url(../../img/hero.PNG);
+    background-position: center;
     background-size: cover;
-    padding: 2.5em;
+    padding: 2em 1.9em 1.5em 1.9em;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     text-align: center;
-    min-height: 20rem; }
+    min-height: 15.875em; }
+    @media (min-width: 32.5em) {
+      .hero__container {
+        padding: 2em 4em 1.5em 4em; } }
+    @media (min-width: 40em) {
+      .hero__container {
+        min-height: 30em; } }
     .hero__container__mainintro {
-      margin-bottom: 0.2em; }
+      margin-bottom: 0.5em; }
     .hero__container__intro {
       color: #fff;
-      width: 90%;
       margin: 0 auto;
-      margin-bottom: 0.9em; }
+      margin-bottom: 1em;
+      max-width: 540px; }
+      @media (min-width: 77.5em) {
+        .hero__container__intro {
+          max-width: 638px; } }
     .hero__container__cta {
       border: 1px solid #fff;
       color: #fff;
-      width: 20em;
+      width: 6em;
       text-decoration: none;
       text-transform: uppercase;
-      padding: 0.4rem;
-      font-size: 1.2rem;
+      padding: 0.3em;
+      font-size: 1rem;
       margin: 0 auto;
-      width: 6.7rem;
       margin: 0 auto; }
+      @media (min-width: 40em) {
+        .hero__container__cta {
+          font-size: 1.25rem; } }
       .hero__container__cta:hover, .hero__container__cta:focus {
         border: 1px solid #85D23F;
         color: #85D23F;
