@@ -1,0 +1,50 @@
+.quicklinks {
+    background-color: $light-gray;
+    margin: 0 auto;
+    padding: 1em;
+
+    &__container {
+
+        @media(min-width: 48em) {
+            display: flex;
+            flex-wrap: wrap;
+            max-width: 960px; 
+            margin: 0 auto;
+        }
+
+        &__block {
+        
+            padding: 1em;
+            text-align: center;
+    
+            @media(min-width: 48em) {
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                flex: 1 0 30%
+            }
+
+            &__content {
+                background-color: $white;
+                padding: 1em ;
+                flex: 0 0 100%;
+                max-width: 100%;
+            }
+    
+    
+            h3 {
+                margin-top:0;
+                margin-bottom: 0.3em;
+                font-weight: $fw-b;
+            }
+    
+            p {
+                font-size: 0.8rem;
+            }
+        }
+
+
+    }
+    
+
+}

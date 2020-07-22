@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     color: $dark-gray;
     font-family: $ff-body;
@@ -22,12 +26,13 @@ h1 {
     font-size: 2rem;
     text-transform: uppercase;
     font-weight: $fw-b;
+    margin: 0;
 
-    @media(min-width: 40em) {
+    @media(min-width: 48em) {
         font-size: 3.125rem
     }
 
-    @media(min-width:77.5em) {
+    @media(min-width: 64em) {
         font-size: 4rem
     }
 
@@ -41,7 +46,7 @@ h2 {
 
 h3 {
     font-family: $ff-body;
-    font-size: 0.875rem;
+    font-size: 1rem;
     text-transform: uppercase;
     color: $green;
 }
@@ -53,37 +58,52 @@ h4 {
 }
 
 p {
-    font-size: 0.89rem;
+    font-size: 0.80rem;
     color: $dark-gray;
 
-    @media(min-width: 40em) {
+    @media(min-width: 48em) {
         font-size: 1.25rem
     }
 
-    @media(min-width:77.5em) {
+    @media(min-width: 64em) {
         font-size: 1.5rem
     }
 }
 
 /* Button link styles */
-
-@mixin link-button($color: $white, $width: 6em, $padding: 0.3em, $font-size: 1rem) {
-    border: 1px solid $color;
-    color: $color;
-    width: $width;
+.cta-button {
+    border: 1px solid $white;
+    color: $white;
     text-decoration: none;
     text-transform: uppercase;
-    padding: $padding;
-    font-size: $font-size;
+    padding: 0.5em 3em;
+    font-size: 1rem;
     margin: 0 auto;
+    display: block;
+    max-width: 13em;
 
-    @media(min-width: 40em) {
-        font-size: 1.25rem
+    &:hover,
+    &:focus {
+        border-color: $green;
+        color: $green;
     }
-}
 
-@mixin link-button-hover($color: $green) {
-    border: 1px solid $color;
-    color: $color;
-    outline: none;
+    &--small {
+        font-size: 0.9rem;
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+
+    &--green {
+        border: 1px solid $green;
+        color: $green;
+
+        &:hover,
+        &:focus {
+            border-color: $white;
+            color: $white;
+            background-color: $green;
+        }
+    }
+
 }

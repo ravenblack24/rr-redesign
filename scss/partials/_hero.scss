@@ -1,51 +1,49 @@
-.hero {
-    width: 100%;
-    margin: 0 auto;
+.hero {  
 
     &__container {
         background-image: url(../../img/hero.PNG);
         background-position: center;
         background-size: cover;
-        padding: 2em 1.9em 1.5em 1.9em;
+        padding-bottom: 1.25em;
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
         text-align: center;
-        min-height: 15.875em;
+        height: 16.8125em;
 
-        @media(min-width: 32.5em) {
-            padding: 2em 4em 1.5em 4em;
-        }
+        // @media(min-width: 32.5em) {
+        //     padding-left: 4em;
+        //     padding-right: 4em;
+        // }
 
-        @media(min-width: 40em) {
+        @media(min-width: 48em) {
             min-height: 30em;
         }
 
         &__mainintro {
-             margin-bottom: 0.5em;  
-        
+             margin-bottom: 0.25em;  
+
         }
 
         &__intro {
             color: $white;
             margin: 0 auto;
             margin-bottom: 1em;
-            max-width: 540px;   
+            // max-width: 540px;   
+            padding-left: 2.1em;
+            padding-right: 2em;
 
-            @media(min-width: 77.5em) {
+            @media(min-width: 48em) {
+                // max-width: 638px; 
+                width: 90%;
+            }
+
+            @media(min-width: 64em) {
                 max-width: 638px; 
             }
+
         }
 
-        &__cta {
-            @include link-button;
-            margin: 0 auto;
-
-            &:hover,
-            &:focus {
-                @include link-button-hover;
-            }
-        }
     }
 
  
