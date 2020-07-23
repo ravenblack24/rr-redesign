@@ -68,14 +68,12 @@ h4 {
 p {
     font-size: 0.80rem;
     color: $dark-gray;
+    font-family: $ff-body;
 
     @media(min-width: 48em) {
         font-size: 1.25rem
     }
 
-    @media(min-width: 64em) {
-        font-size: 1.5rem
-    }
 }
 
 /* Button link styles */
