@@ -6,19 +6,14 @@
     padding: 1em;
     
     @media(min-width: 48em) {
+        margin: -8em auto -4em;
+        position: relative;
         width: 65%;
         max-width: 950px;
-        position: absolute;
-        left: 50%;
-        transform: translateX(-50%);
-        top: 54em;
     }
 
     @media(min-width: 64em) {
-        top: 63em;
         padding: 1.25em;
-        // z-index:10;
-       // padding: 2em 1em 1.75em;
     }
 
     &__container {

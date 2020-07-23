@@ -2,9 +2,65 @@
     background-color: $white;
     padding: 1em;
 
+    @media(min-width: 48em) {
+        padding-top: 6em;
+    } 
+
     &__container {
-        margin: 0 auto;
-        padding: 1em;
+        padding: 1em 0;
+
+        &__title {
+            text-align: center;
+        }
+
+        &__headline {
+            margin: 0;
+            position: relative;
+            width: 100%;
+
+            &__image {
+                display: block;    
+                width: 100%;
+                height: auto;
+            }
+
+            &__text {
+                position: absolute;
+                bottom:0;
+                background: rgba(0,0,0,0.7);
+                width: 100%;
+                padding: 0.5em;
+                z-index: 10;
+
+                &__title {
+                    font-size: 1.125rem;
+                    font-weight: $fw-b;
+                    margin:0;
+                    padding:0;
+                    color: $white;
+                    line-height: 1.4;
+                }
+
+                &__date {
+                    font-size: 0.875rem;
+                    margin:0;
+                    padding:0;
+                    color: $white;
+                }
+            }
+
+        }
+
+        &__snippet {
+            padding: 1em 0;
+        }
+        
+        
+        &__more {
+            text-align: center;
+            padding: 1.25em 0 .5em;
+        }
+    
     }
 
 }
