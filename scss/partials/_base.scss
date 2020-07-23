@@ -8,6 +8,8 @@ body {
     line-height: 1.6;
     font-size: 16px;
     background-color: $white;
+    -webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 
 img {
@@ -66,12 +68,12 @@ h4 {
 }
 
 p {
-    font-size: 0.80rem;
+    font-size: 0.875rem;
     color: $dark-gray;
     font-family: $ff-body;
 
     @media(min-width: 48em) {
-        font-size: 1.25rem
+        font-size: 1rem
     }
 
 }

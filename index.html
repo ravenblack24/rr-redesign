@@ -5,6 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Redway Runners - Milton Keynes running club</title>
     <link rel="stylesheet" href="css/main.css" />
+    <script>
+        // Get the modal
+        var modal = document.getElementById("myModal");
+
+        // Get the button that opens the modal
+        var btn = document.getElementById("ea-video");
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks on the button, open the modal
+        btn.onclick = function() {
+            modal.style.display = "block";
+        }
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+
+    </script>
 </head>
 <body>
     <header class="header">
@@ -129,15 +157,6 @@
                             Read article
                         </a>
                     </div>
-
-        
-
-
-
-                </div>
-
-                <div class="news__container__more">
-                    ...
                 </div>
             </div>
         </section>
@@ -154,20 +173,16 @@
 
         <!-- About us-->
         <section class="about">
+            <h2 class="about__title">Who we are</h2> 
             <div class="about__container">
-                <div class="about__container__title">
-                   <h2>Who we are</h2>
-                </div>
                 <div class="about__container__img">
-                    image goes here
+                    <!--<iframe title="vimeo-player" src="https://player.vimeo.com/video/347249239" width="640" height="360" frameborder="0" allowfullscreen></iframe>-->
+                    <a href="#" id="ea-video"><img src="img/aboutus.PNG"></a>
                 </div>
                 <div class="about__container__intro">
-                    Redway Runners is an award-winning community running club based in Milton Keynes.   From humble beginnings back in 2011, the club now has over 3.600 paid members making it one of the largest running clubs in the UK. 
-
-Above all, Redway Runners is built on having fun and getting fit in a friendly environment that welcomes all abilities. 
-                </div>
-                <div class="about__container__cta">
-                    <a href="#">About the club</a>
+                    <p>Redway Runners is an <strong>award-winning community running club</strong> based in Milton Keynes.   From humble beginnings back in 2011, the club now has over 3.600 paid members making it <strong>one of the largest running clubs in the UK</strong>.</p> 
+                    <p>Above all, Redway Runners is built on having fun and getting fit in a friendly environment that welcomes all abilities.</p>   
+                    <a href="#"  class="cta-button cta-button--green">About us</a> 
                 </div>
             </div>
         </section>
@@ -175,14 +190,18 @@ Above all, Redway Runners is built on having fun and getting fit in a friendly e
         <!-- Insta -->
         <section class="insta">
             <div class="insta__container">
-                <div class="insta__container__title">
-                    <h2>Instagram latest</h2>
-                </div>
-                <div class="insta__container__handle">
-                    @redwayrunners
-                </div>
+                <h2>Instagram latest</h2>
+                <p class="insta__container__handle">@redwayrunners</p>
                 <div class="insta__container__gallery">
-                    images go here
+                    <div class="insta__container__gallery__item">
+                        <img src="img/insta1.PNG" />
+                    </div>
+                    <div class="insta__container__gallery__item">
+                        <img src="img/insta2.PNG" />
+                    </div>
+                    <div class="insta__container__gallery__item">
+                        <img src="img/insta3.PNG" />
+                    </div>
                 </div>
             </div>
         </section>
