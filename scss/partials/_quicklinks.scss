@@ -4,9 +4,17 @@
 
     @media(min-width: 48em) {
         padding-top: 1.75em;
-        padding-bottom: 1.75em;
+        // to accommodate next run block
+        padding-bottom: 10.5em;
+
     }
- 
+
+    @media(min-width: 64em) {
+        // to accommodate next run block
+        padding-bottom: 12em;
+    }
+
+
 
     &__container {
      

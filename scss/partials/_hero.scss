@@ -21,6 +21,11 @@
             padding-bottom: 2em;
         }
 
+        @media(min-width: 64em) {
+            height: 38.75em;
+        }
+
+
         &__mainintro {
              margin-bottom: 0.25em;  
 
