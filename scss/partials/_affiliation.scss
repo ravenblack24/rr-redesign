@@ -1,0 +1,32 @@
+.affiliation {
+    background-color: $white;
+    padding: 2em 1em;
+
+    &__container {
+        max-width: 960px;
+        margin: 0 auto;
+
+        &__title h2 {
+            text-align: center;
+        }
+
+        &__affiliates {
+            display: flex;
+            flex-wrap: wrap;
+            text-align: center;
+
+            a {
+                flex: 1 0 50%;
+                height: auto;
+                padding-left: 0.25em;
+                padding-right: 0.25em;
+
+                @media(min-width: 48em ) {
+                    flex: 1 0 25%;
+                }
+            }
+        }
+    }
+
+
+}

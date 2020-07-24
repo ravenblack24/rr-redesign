@@ -691,10 +691,12 @@ p {
 .insta {
   background-color: #E9EBE9;
   padding: 2em 1em;
-  max-width: 960px;
+  max-width: 1120px;
   margin: 0 auto; }
   .insta__container {
-    text-align: center; }
+    text-align: center;
+    margin: 0 auto;
+    max-width: 960px; }
     .insta__container h2 {
       color: #525252;
       margin-bottom: 0; }
@@ -709,3 +711,24 @@ p {
         flex: 1 0 33%; }
         .insta__container__gallery__item img {
           height: auto; }
+
+.affiliation {
+  background-color: #fff;
+  padding: 2em 1em; }
+  .affiliation__container {
+    max-width: 960px;
+    margin: 0 auto; }
+    .affiliation__container__title h2 {
+      text-align: center; }
+    .affiliation__container__affiliates {
+      display: flex;
+      flex-wrap: wrap;
+      text-align: center; }
+      .affiliation__container__affiliates a {
+        flex: 1 0 50%;
+        height: auto;
+        padding-left: 0.25em;
+        padding-right: 0.25em; }
+        @media (min-width: 48em) {
+          .affiliation__container__affiliates a {
+            flex: 1 0 25%; } }
