@@ -7,42 +7,27 @@
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/brands.min.css">
-    <script>
-        // Get the modal
-        var modal = document.getElementById("myModal");
-
-        // Get the button that opens the modal
-        var btn = document.getElementById("ea-video");
-
-        // Get the <span> element that closes the modal
-        var span = document.getElementsByClassName("close")[0];
-
-        // When the user clicks on the button, open the modal
-        btn.onclick = function() {
-            modal.style.display = "block";
-        }
-
-        // When the user clicks on <span> (x), close the modal
-        span.onclick = function() {
-            modal.style.display = "none";
-        }
-
-        // When the user clicks anywhere outside of the modal, close it
-        window.onclick = function(event) {
-            if (event.target == modal) {
-                modal.style.display = "none";
-            }
-        }
-
-    </script>
 </head>
 <body>
     <header class="header">
         <div class="header__container">
-            <div class="header__container__logo">
-                <img src="img/logo.png" alt="Redway Runners logo" />
-            </div>
-            <nav></nav>
+            <img src="img/logo.png" alt="Redway Runners logo"  class="header__container__logo"/>
+            <nav class="header__container__nav">
+                <ul class="header__container__nav__secondary">
+                    <li>My profile</li>
+                    <li>Store</li>
+                    <li>About</li>
+                    <li>Contact</li>
+                </ul>
+                <ul class="header__container__nav__primary">
+                    <li>Home</li>
+                    <li>Run schedule</li>
+                    <li>What's on</li>
+                    <li>News</li>
+                    <li>Training</li>
+                    <li>Join us</li>
+                </ul>
+            </nav>
         </div>
     </header>
     <main>
@@ -250,7 +235,7 @@
                     <li>My profile</li>
                     <li>Store</li>
                     <li>About</li>
-                    <li>Contacts</li>
+                    <li>Contact</li>
                 </ul>
             </nav>
             <p class="footer__container__copyright">
