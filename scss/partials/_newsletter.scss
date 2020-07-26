@@ -4,8 +4,6 @@
  
 
     &__container {
-        color: $white;
-        text-align: center;
         margin: 0 auto;
         max-width: 540px; 
 
@@ -15,6 +13,9 @@
             font-weight: $fw-b;
             line-height: 1.2;
             padding-bottom: 0.75em;
+            color: $white;
+            text-align: center;
+            margin: 0;
         }
     }
 }

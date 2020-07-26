@@ -42,13 +42,21 @@
                 flex: 0 0 100%;
                 max-width: 100%;
 
-                h3 {
+                &__title {
                     margin-top:0;
                     margin-bottom: 0.3em;
                     font-weight: $fw-b;
+                    font-family: $ff-body;
+                    font-size: 1rem;
+                    text-transform: uppercase;
+                    color: $brand-green;
+                
+                    @media(min-width: 64em) {
+                        font-size: 1.5rem;
+                    }
                 }
         
-                p {
+                &__desc {
                     font-size: 0.875rem;
                 }
             }

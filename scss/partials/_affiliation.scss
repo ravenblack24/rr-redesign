@@ -6,7 +6,7 @@
         max-width: 960px;
         margin: 0 auto;
 
-        &__title h2 {
+        &__title {
             text-align: center;
         }
 
@@ -15,7 +15,7 @@
             flex-wrap: wrap;
             text-align: center;
 
-            a {
+            &__affiliate {
                 flex: 1 0 50%;
                 height: auto;
                 padding-left: 0.25em;

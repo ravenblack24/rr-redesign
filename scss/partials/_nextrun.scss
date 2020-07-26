@@ -25,22 +25,17 @@
             padding: 3em 1.15em 1.75em;
         }
 
-        h2 {
+        &__title {
             background: $dark-gray;
             position: absolute;
             left: 50%;
             transform: translateX(-50%);
-            top: -.5em;
+            top: -0.5em;
             width: 6em;
             color: $white;
-
-            @media(min-width: 64em) {
-                top: -.5em;
-                font-size: 2.5rem
-            }
         }
 
-        &__title {
+        &__day{
             color: $white;
             font-size: 1.5rem;
         }

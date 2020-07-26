@@ -57,13 +57,12 @@
                             font-size: 1.125rem;
                             font-weight: $fw-b;
                             margin:0;
-                
+                            text-transform: none;
                             color: $white;
                             line-height: 1.4;
                         }
 
                         &__date {
-                            font-size: 0.875rem;
                             margin:0;
                             color: $white;
                         }

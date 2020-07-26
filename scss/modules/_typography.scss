@@ -6,3 +6,64 @@ $ff-body: 'Open Sans', sans-serif;
 $fw-n: 400;
 $fw-b: 700;
 
+h1, h2, p {
+    margin-top: 0;
+    margin-bottom: 1em;
+}
+
+h1 {
+    font-family: $ff-body;
+    color: $white;
+    line-height: 1;
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: $fw-b;
+    margin: 0;
+
+    @media(min-width: 48em) {
+        font-size: 3.125rem
+    }
+
+    @media(min-width: 64em) {
+        font-size: 4rem
+    }
+
+}
+
+h2 {
+    font-family: $ff-heading;
+    color: $green;
+    font-size: 1.875rem;
+
+    @media(min-width: 48em) {
+        font-size: 2.5rem
+    }
+}
+
+h3 {
+    font-family: $ff-body;
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: $brand-green;
+
+    @media(min-width: 64em) {
+        font-size: 1.5rem;
+    }
+}
+
+h4 {
+    font-family: $ff-body;
+    font-size: 1.125rem;
+    color: $white;
+}
+
+p {
+    font-size: 0.875rem;
+    color: $dark-gray;
+    font-family: $ff-body;
+
+    @media(min-width: 48em) {
+        font-size: 1rem
+    }
+
+}
