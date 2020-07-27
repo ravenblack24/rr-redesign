@@ -359,7 +359,7 @@ p {
 body {
   color: #525252;
   font-family: "Open Sans", sans-serif;
-  line-height: 1.6;
+  line-height: 1.5;
   font-size: 16px;
   background-color: #fff;
   -webkit-font-smoothing: antialiased;
@@ -555,7 +555,7 @@ img {
 
 .nextrun {
   background-color: #525252;
-  padding: 1em; }
+  padding: 1.5em; }
   @media (min-width: 48em) {
     .nextrun {
       margin: -9em auto -4em;
@@ -567,27 +567,45 @@ img {
       padding: 1.25em; } }
   .nextrun__container {
     outline: 1px solid #fff;
-    outline-offset: -.5em;
-    padding: 2em 1.15em 1.75em;
+    padding: 2.25em 1.15em 1.25em;
     text-align: center;
     position: relative;
     color: #fff; }
     @media (min-width: 64em) {
       .nextrun__container {
-        padding: 3em 1.15em 1.75em; } }
+        padding: 3em 1.15em 1.75em;
+        outline-offset: -.75em; } }
     .nextrun__container__title {
       background: #525252;
       position: absolute;
       left: 50%;
       transform: translateX(-50%);
-      top: -0.5em;
+      top: -0.7em;
       width: 6em;
       color: #fff; }
-    .nextrun__container__day {
+      @media (min-width: 48em) {
+        .nextrun__container__title {
+          top: -0.6em; } }
+      @media (min-width: 64em) {
+        .nextrun__container__title {
+          top: -0.4em; } }
+    @media (min-width: 48em) {
+      .nextrun__container__block {
+        display: flex;
+        justify-content: space-between;
+        padding: 1.5em; } }
+    .nextrun__container__block__day {
       color: #fff;
-      font-size: 1.5rem; }
-    .nextrun__container__list {
-      color: #fff; }
+      font-size: 1.5rem;
+      margin-bottom: 0.75em; }
+    .nextrun__container__block__list {
+      color: #fff;
+      margin: 0;
+      padding: 0 0 1.25em; }
+      .nextrun__container__block__list__item {
+        font-size: 0.8rem;
+        list-style: none;
+        padding-bottom: 0.5em; }
     .nextrun__container a {
       padding-left: 2em;
       padding-right: 2em; }
@@ -599,7 +617,7 @@ img {
     .news {
       padding-top: 5em; } }
   .news__container {
-    padding: 1em 0;
+    padding: 1em 0 0;
     max-width: 960px;
     margin: 0 auto; }
     .news__container__title {
@@ -649,10 +667,11 @@ img {
 
 .newsletter {
   background-color: #6CB42A;
-  padding: 3em 3.5em; }
+  padding: 2em 1em; }
   .newsletter__container {
     margin: 0 auto;
-    max-width: 540px; }
+    max-width: 540px;
+    padding: 1em; }
     .newsletter__container__intro {
       font-family: "Raleway", sans-serif;
       font-size: 1.875rem;
@@ -672,7 +691,7 @@ img {
       padding-bottom: 1.75em; } }
   .about__title {
     text-align: center;
-    padding: 0.5em 0 0;
+    padding: 1em 0 0;
     width: 90%;
     max-width: 960px;
     margin: 0 auto 1em; }

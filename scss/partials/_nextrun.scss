@@ -1,6 +1,6 @@
 .nextrun {
     background-color: $dark-gray;
-    padding: 1em;
+    padding: 1.5em;
     
     @media(min-width: 48em) {
         margin: -9em auto -4em;
@@ -15,14 +15,14 @@
 
     &__container {
         outline: 1px solid $white;
-        outline-offset: -.5em;
-        padding: 2em 1.15em 1.75em;
+        padding: 2.25em 1.15em 1.25em;
         text-align: center;
         position: relative;
         color: $white;
 
         @media(min-width: 64em) {
             padding: 3em 1.15em 1.75em;
+            outline-offset: -.75em;
         }
 
         &__title {
@@ -30,18 +30,45 @@
             position: absolute;
             left: 50%;
             transform: translateX(-50%);
-            top: -0.5em;
+            top: -0.7em;
             width: 6em;
             color: $white;
+
+            @media(min-width: 48em) {
+                top: -0.6em;
+            }
+
+            @media(min-width: 64em) {
+                top: -0.4em;
+            }
         }
 
-        &__day{
-            color: $white;
-            font-size: 1.5rem;
-        }
+        &__block {
 
-        &__list {
-            color: $white;
+            @media(min-width: 48em) {
+                display: flex;
+                justify-content: space-between;
+                padding: 1.5em;
+            }
+
+            &__day{
+                color: $white;
+                font-size: 1.5rem;
+                margin-bottom: 0.75em;
+            }
+    
+            &__list {
+                color: $white;
+                margin: 0;
+                padding: 0 0 1.25em;
+    
+                &__item {
+                    font-size: 0.8rem;
+                    list-style: none;
+                    padding-bottom: 0.5em;
+                }
+            }
+
         }
 
         a {
