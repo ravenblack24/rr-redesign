@@ -493,16 +493,18 @@ section {
           display: none; } }
     .header__container__nav {
       position: absolute;
+      background-color: #E9EBE9;
       width: 100%;
       top: -0.75em;
       padding: 3em 1.5em;
       margin: 0;
       display: flex;
       flex-direction: column-reverse;
-      right: -100vw;
-      transition: right 1s; }
+      right: -100%;
+      transition: right ease-out 250ms; }
       @media (min-width: 48em) {
         .header__container__nav {
+          background-color: transparent;
           display: block;
           top: 1em;
           right: 0;
@@ -523,7 +525,7 @@ section {
             display: none; } }
       .header__container__nav--active {
         right: 0;
-        background-color: #E9EBE9;
+        transition: right ease-in 250ms;
         box-shadow: -2px 2px 100px #000; }
       .header__container__nav__primary {
         margin: 0;
