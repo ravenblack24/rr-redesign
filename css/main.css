@@ -492,16 +492,39 @@ section {
         .header__container .menu-button {
           display: none; } }
     .header__container__nav {
+      position: absolute;
+      width: 100%;
+      top: -0.75em;
+      padding: 3em 1.5em;
       margin: 0;
-      padding: 0;
       display: flex;
-      flex-direction: column-reverse; }
+      flex-direction: column-reverse;
+      right: -100vw;
+      transition: right 1s; }
       @media (min-width: 48em) {
         .header__container__nav {
+          display: block;
           top: 1em;
           right: 0;
+          position: static;
           display: flex;
-          flex-direction: row; } }
+          flex-direction: row;
+          padding: 0; } }
+      .header__container__nav__close {
+        background: none;
+        border: 0;
+        width: auto;
+        position: absolute;
+        top: 0.75em;
+        right: 0.75em;
+        font-size: 1.5rem; }
+        @media (min-width: 48em) {
+          .header__container__nav__close {
+            display: none; } }
+      .header__container__nav--active {
+        right: 0;
+        background-color: #E9EBE9;
+        box-shadow: -2px 2px 100px #000; }
       .header__container__nav__primary {
         margin: 0;
         padding: 0;
@@ -513,23 +536,25 @@ section {
             justify-content: space-between;
             position: absolute;
             top: 3em;
-            right: 0; }
+            right: 0; } }
+        .header__container__nav__primary li {
+          padding-bottom: 0.5em; }
+          @media (min-width: 48em) {
             .header__container__nav__primary li {
               text-transform: uppercase;
               font-size: 0.95rem;
               padding-right: 1em; } }
-    @media (min-width: 48em) and (min-width: 64em) {
-      .header__container__nav__primary li {
-        padding-right: 2.5em; } }
-        @media (min-width: 48em) {
-              .header__container__nav__primary li:last-child {
-                padding-right: 1.75em; }
-              .header__container__nav__primary li a {
-                text-decoration: none;
-                color: #000; }
-              .header__container__nav__primary li a:hover,
-              .header__container__nav__primary li a:focus {
-                color: #fff; } }
+          @media (min-width: 64em) {
+            .header__container__nav__primary li {
+              padding-right: 2.5em; } }
+          .header__container__nav__primary li:last-child {
+            padding-right: 1.75em; }
+          .header__container__nav__primary li a {
+            text-decoration: none;
+            color: #000; }
+          .header__container__nav__primary li a:hover,
+          .header__container__nav__primary li a:focus {
+            color: #fff; }
       @media (min-width: 48em) {
         .header__container__nav__secondary {
           margin: 0;

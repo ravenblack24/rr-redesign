@@ -45,16 +45,46 @@
         }
 
         &__nav {
+            position: absolute;
+            width: 100%;
+            top: -0.75em;
+            padding: 3em 1.5em;
             margin: 0;
-            padding: 0;
             display: flex;
             flex-direction: column-reverse;
+            right: -100vw;
+            transition: right 1s;
+   
 
             @media(min-width: 48em) {
-                top:1em;
+                display: block;
+                top: 1em;
                 right: 0;
+                position: static;
                 display: flex;
                 flex-direction: row;
+                padding: 0;
+            }
+
+            &__close {
+                background: none;
+                border: 0;
+                width: auto;
+                position: absolute;
+                top: 0.75em;
+                right: 0.75em;
+                font-size: 1.5rem;
+
+                @media(min-width: 48em) {
+                    display: none;
+                }
+            }
+
+            &--active {
+                right: 0;
+                background-color: $light-gray;
+                box-shadow: -2px 2px 100px #000;
+
             }
 
             &__primary {
@@ -70,28 +100,33 @@
                     top: 3em;
                     right: 0;
 
-                    li {
+                }
+
+                li {
+                    padding-bottom: 0.5em;
+                    
+                    @media(min-width: 48em) {
                         text-transform: uppercase;
                         font-size: 0.95rem;
                         padding-right: 1em;
+                    }
+                    
+                    @media(min-width: 64em) {
+                        padding-right: 2.5em;
+                    }
 
-                        @media(min-width: 64em) {
-                            padding-right: 2.5em;
-                        }
+                    &:last-child {
+                        padding-right: 1.75em;
+                    }
 
-                        &:last-child {
-                            padding-right: 1.75em;
-                        }
+                    a {
+                        text-decoration: none;
+                        color: #000;
+                    }
 
-                        a {
-                            text-decoration: none;
-                            color: #000;
-                        }
-
-                        a:hover,
-                        a:focus {
-                            color: $white;
-                        }
+                    a:hover,
+                    a:focus {
+                        color: $white;
                     }
                 }
             }
