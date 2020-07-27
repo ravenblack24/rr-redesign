@@ -1,13 +1,12 @@
 .news {
     background-color: $white;
-    padding: 1em;
 
     @media(min-width: 48em) {
-        padding-top: 5em;
+         padding-top: 6em;
     } 
 
     &__container {
-        padding: 1em 0 0;
+        // padding: 1em 0 0;
         max-width: 960px; 
         margin: 0 auto;
 
@@ -26,6 +25,10 @@
 
 
             &__story {
+                margin-bottom: 2em;
+                &:last-child {
+                    margin-bottom: 0; 
+                }
 
                 @media(min-width: 48em) {
                     flex: 1 0 33%;
@@ -33,7 +36,7 @@
                     padding-right: 0.5em;
                 }
 
-                padding-bottom: 2em;
+                
 
                 &__headline {
                     margin: 0;

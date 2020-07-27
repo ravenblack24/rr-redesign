@@ -1,13 +1,15 @@
 .newsletter {
     background-color: $brand-green;
-   // padding: 3em 3.5em;
-   padding: 2em 1em;
+    padding: 2em;
+
+    @media(min-width: 48em) {
+        padding: 4em;
+    }
  
 
     &__container {
         margin: 0 auto;
         max-width: 540px; 
-        padding: 1em;
 
         &__intro {
             font-family: $ff-heading;

@@ -1,24 +1,14 @@
 .about {
     background-color: $white;
-    padding: 1em;
-
-    @media(min-width: 48em) {
-        padding-top: 1.75em;
-        padding-bottom: 1.75em;
-    }
 
     &__title {
         text-align: center;
-        padding: 1em 0 0;
-   
-        width: 90%;
         max-width: 960px; 
-        margin: 0 auto 1em;
 
         @media(min-width: 48em) {
-            text-align: left;
-            margin-bottom: 0.5em;
-          
+            margin: 0 auto 0.5em;
+            width: 90%;
+            text-align: left;          
         }
     }
 

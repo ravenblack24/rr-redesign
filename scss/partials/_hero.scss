@@ -1,7 +1,10 @@
 .hero {  
+    padding: 0;
 
     &__container {
-        background-image: url(../../img/hero.PNG);
+        background:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../../img/graduation.jpg);
+        //background:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(https://www.redwayrunners.com/wp-content/uploads/2018/08/Sunday-run-5-Aug-2018.jpg);
+        //background:linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url(https://scontent-lhr8-1.xx.fbcdn.net/v/t1.0-9/103465925_3155799047774321_7931167128527572311_o.jpg?_nc_cat=107&_nc_sid=730e14&_nc_ohc=qDIFbQNBi7cAX-Ib5p2&_nc_ht=scontent-lhr8-1.xx&oh=0f415359b9b9a8e64eb03e8b87b7fead&oe=5F446454);
         background-position: center;
         background-size: cover;
         padding-bottom: 1.25em;
@@ -11,47 +14,34 @@
         text-align: center;
         height: 16.8125em;
 
-        // @media(min-width: 32.5em) {
-        //     padding-left: 4em;
-        //     padding-right: 4em;
-        // }
-
         @media(min-width: 48em) {
             min-height: 30em;
             padding-bottom: 2em;
         }
 
         @media(min-width: 64em) {
-            height: 38.75em;
+            height: 36.625em;
         }
-
 
         &__mainintro {
              margin-bottom: 0.25em;  
+             line-height: 0.9;
 
         }
 
         &__intro {
             color: $white;
             margin: 0 auto;
-            margin-bottom: 1em;
-            // max-width: 540px;   
+            margin-bottom: 1em; 
             padding-left: 2.1em;
             padding-right: 2em;
+            line-height: 1.3;
+
 
             @media(min-width: 48em) {
-                // max-width: 638px; 
-                width: 90%;
+                max-width: 705px; 
+                font-size: 1.5rem;
             }
-
-            @media(min-width: 64em) {
-                max-width: 638px; 
-            }
-
-        }
-
+         }
     }
-
- 
 }
-

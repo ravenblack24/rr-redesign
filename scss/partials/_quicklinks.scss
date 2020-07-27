@@ -1,18 +1,17 @@
 .quicklinks {
     background-color: $light-gray;
-    padding-bottom: 1em;
 
     @media(min-width: 48em) {
         padding-top: 1.75em;
         // to accommodate next run block
-        padding-bottom: 12.25em;
+        padding-bottom: 11.25em;
 
     }
 
-    @media(min-width: 64em) {
-        // to accommodate next run block
-        padding-bottom: 12em;
-    }
+    // @media(min-width: 64em) {
+    //     // to accommodate next run block
+    //     padding-bottom: 12em;
+    // }
 
     &__container {
      
@@ -24,8 +23,12 @@
         }
 
         &__block {
-            padding: 1em 1em 0;
+            margin-bottom: 1em;
             text-align: center;
+
+            // &:last-child {
+            //     margin-bottom: 0;
+            // }
     
             @media(min-width: 48em) {
                 display: flex;
@@ -33,7 +36,7 @@
                 flex-wrap: wrap;
                 flex: 1 0 33%;
                 padding-left: 0.5em;
-                padding-right: 0.5em;
+                padding-right: 0.5em; 
             }
 
             &__content {
@@ -41,6 +44,12 @@
                 padding: 1em;
                 flex: 0 0 100%;
                 max-width: 100%;
+
+                @media(min-width: 48em) {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                }
 
                 &__title {
                     margin-top:0;
@@ -58,6 +67,10 @@
         
                 &__desc {
                     font-size: 0.875rem;
+                }
+
+                .cta-button {
+                    width: 100%;
                 }
             }
     

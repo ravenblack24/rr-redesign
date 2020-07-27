@@ -3,7 +3,8 @@
     padding: 2em 1em 1em;
 
     @media(min-width: 46em) {
-        padding: 2em 2em 1em;
+        padding-left: 2em;
+        padding-right: 2em;
     }
 
     &__container {

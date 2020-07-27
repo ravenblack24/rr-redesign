@@ -1,7 +1,5 @@
 .insta {
-    background-color: $white;
-    padding: 2em 2em;
-
+    background-color: $light-gray;
     margin: 0 auto;
 
     &__container {
@@ -12,6 +10,10 @@
         &__title {
             color: $green;
             margin-bottom: 0;
+        }
+
+        &__id {
+            margin-bottom: 1.5em
         }
 
         &__gallery {

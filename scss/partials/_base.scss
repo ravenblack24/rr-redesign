@@ -16,6 +16,14 @@ img {
     max-width: 100%;
 }
 
+section {
+    padding: 1.5em 1em;
+
+    @media(min-width: 48em) {
+        padding: 3em 2em;
+    }
+}
+
 /* Button link styles */
 .cta-button {
     border: 1px solid $white;
@@ -38,6 +46,10 @@ img {
     &--large {
         padding-left: 2.5em;
         padding-right: 2.5em;
+
+        @media(min-width: 48em) {
+            font-size: 1.2rem;
+        }
     }
 
     &--green {
@@ -49,6 +61,18 @@ img {
             border-color: $white;
             color: $white;
             background-color: $green;
+        }
+    }
+
+    &--white {
+        border: 1px solid $white;
+        color: $white;
+
+        &:hover,
+        &:focus {
+            border-color: $green;
+            color: $green;
+            background-color: $white;
         }
     }
 
