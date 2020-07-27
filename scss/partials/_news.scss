@@ -2,7 +2,8 @@
     background-color: $white;
 
     @media(min-width: 48em) {
-         padding-top: 6em;
+        padding: 1.75em 1.75em;
+        // with next run block: padding-top: 6em;
     } 
 
     &__container {
@@ -12,6 +13,7 @@
 
         &__title {
             text-align: center;
+            margin-bottom: 0.75em;
         }
 
         &__box {
@@ -22,7 +24,6 @@
                 flex-direction: row;
                 flex-wrap: wrap;
             }
-
 
             &__story {
                 margin-bottom: 2em;
@@ -36,17 +37,21 @@
                     padding-right: 0.5em;
                 }
 
-                
-
                 &__headline {
                     margin: 0;
                     position: relative;
                     width: 100%;
+                    overflow: hidden;
 
                     &__image {
                         display: block;    
                         width: 100%;
                         height: auto;
+                        transition: transform 500ms;
+
+                        &:hover {
+                            transform: scale(1.2);
+                        }
                     }
 
                     &__text {

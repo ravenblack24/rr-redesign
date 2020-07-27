@@ -106,9 +106,9 @@
 
                 li {
                     padding-bottom: 1em;
+                    text-transform: uppercase;
                     
                     @media(min-width: 48em) {
-                        text-transform: uppercase;
                         font-size: 0.95rem;
                         padding-right: 1em;
                     }

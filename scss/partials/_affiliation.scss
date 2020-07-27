@@ -18,13 +18,21 @@
                 height: auto;
                 padding-left: 0.25em;
                 padding-right: 0.25em;
+                overflow: hidden;
 
                 @media(min-width: 48em ) {
                     flex: 1 0 25%;
                 }
+
+                img {
+                    transition: transform 250ms;
+                }
+
+                img:hover {
+                    transform: scale(1.1);
+
+                }
             }
         }
     }
-
-
 }

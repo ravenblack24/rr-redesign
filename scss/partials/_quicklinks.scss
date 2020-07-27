@@ -3,15 +3,9 @@
 
     @media(min-width: 48em) {
         padding-top: 1.75em;
-        // to accommodate next run block
-        padding-bottom: 11.25em;
-
+        // with next run block: padding-bottom: 11.25em;
+        padding-bottom: 1em;
     }
-
-    // @media(min-width: 64em) {
-    //     // to accommodate next run block
-    //     padding-bottom: 12em;
-    // }
 
     &__container {
      
@@ -26,9 +20,9 @@
             margin-bottom: 1em;
             text-align: center;
 
-            // &:last-child {
-            //     margin-bottom: 0;
-            // }
+            &:last-child {
+                margin-bottom: 0;
+            }
     
             @media(min-width: 48em) {
                 display: flex;
@@ -37,6 +31,10 @@
                 flex: 1 0 33%;
                 padding-left: 0.5em;
                 padding-right: 0.5em; 
+
+                &:last-child {
+                    margin-bottom: 1em;
+                }
             }
 
             &__content {

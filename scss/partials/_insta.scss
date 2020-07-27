@@ -19,9 +19,12 @@
         &__gallery {
 
             &__item {
+                width: 50%;
+                display: inline-block;
+                overflow: hidden;
+
                 @media(min-width: 48em) {
-                    width: 33%;
-                    display: inline-block;
+                    width: 20%;
                 }
   
                 img {
@@ -29,6 +32,11 @@
                     display: block;
                     max-width: none;
                     width: 100%;
+                    transition: transform 500ms;
+
+                    &:hover {
+                        transform: scale(1.2);
+                    }
                 }
             }
         }

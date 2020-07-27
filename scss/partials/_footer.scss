@@ -19,8 +19,8 @@
         }
 
         &__social {
+
             padding-bottom: 1em;
-            
 
             @media(min-width: 46em) {
                  width: 28%;
@@ -37,7 +37,7 @@
 
                 @media(min-width: 46em) {
                     justify-content: space-between;
-               }
+                }
    
                 &__social {
                     font-size: 2.5rem;

@@ -542,10 +542,10 @@ section {
             top: 3em;
             right: 0; } }
         .header__container__nav__primary li {
-          padding-bottom: 1em; }
+          padding-bottom: 1em;
+          text-transform: uppercase; }
           @media (min-width: 48em) {
             .header__container__nav__primary li {
-              text-transform: uppercase;
               font-size: 0.95rem;
               padding-right: 1em; } }
           @media (min-width: 64em) {
@@ -596,14 +596,11 @@ section {
     flex-direction: column;
     justify-content: flex-end;
     text-align: center;
-    height: 16.8125em; }
+    height: calc(100vh - 65.7px); }
     @media (min-width: 48em) {
       .hero__container {
-        min-height: 30em;
-        padding-bottom: 2em; } }
-    @media (min-width: 64em) {
-      .hero__container {
-        height: 36.625em; } }
+        height: calc(100vh - 109px);
+        padding-bottom: 3em; } }
     .hero__container__mainintro {
       margin-bottom: 0.25em;
       line-height: 0.9; }
@@ -624,7 +621,7 @@ section {
   @media (min-width: 48em) {
     .quicklinks {
       padding-top: 1.75em;
-      padding-bottom: 11.25em; } }
+      padding-bottom: 1em; } }
   @media (min-width: 48em) {
     .quicklinks__container {
       display: flex;
@@ -634,6 +631,8 @@ section {
   .quicklinks__container__block {
     margin-bottom: 1em;
     text-align: center; }
+    .quicklinks__container__block:last-child {
+      margin-bottom: 0; }
     @media (min-width: 48em) {
       .quicklinks__container__block {
         display: flex;
@@ -641,7 +640,9 @@ section {
         flex-wrap: wrap;
         flex: 1 0 33%;
         padding-left: 0.5em;
-        padding-right: 0.5em; } }
+        padding-right: 0.5em; }
+        .quicklinks__container__block:last-child {
+          margin-bottom: 1em; } }
     .quicklinks__container__block__content {
       background-color: #fff;
       padding: 1em;
@@ -729,12 +730,13 @@ section {
   background-color: #fff; }
   @media (min-width: 48em) {
     .news {
-      padding-top: 6em; } }
+      padding: 1.75em 1.75em; } }
   .news__container {
     max-width: 960px;
     margin: 0 auto; }
     .news__container__title {
-      text-align: center; }
+      text-align: center;
+      margin-bottom: 0.75em; }
     .news__container__box {
       display: flex;
       flex-direction: column; }
@@ -754,11 +756,15 @@ section {
         .news__container__box__story__headline {
           margin: 0;
           position: relative;
-          width: 100%; }
+          width: 100%;
+          overflow: hidden; }
           .news__container__box__story__headline__image {
             display: block;
             width: 100%;
-            height: auto; }
+            height: auto;
+            transition: transform 500ms; }
+            .news__container__box__story__headline__image:hover {
+              transform: scale(1.2); }
           .news__container__box__story__headline__text {
             position: absolute;
             bottom: 0;
@@ -852,15 +858,21 @@ section {
       margin-bottom: 0; }
     .insta__container__id {
       margin-bottom: 1.5em; }
-    @media (min-width: 48em) {
-      .insta__container__gallery__item {
-        width: 33%;
-        display: inline-block; } }
-    .insta__container__gallery__item img {
-      height: auto;
-      display: block;
-      max-width: none;
-      width: 100%; }
+    .insta__container__gallery__item {
+      width: 50%;
+      display: inline-block;
+      overflow: hidden; }
+      @media (min-width: 48em) {
+        .insta__container__gallery__item {
+          width: 20%; } }
+      .insta__container__gallery__item img {
+        height: auto;
+        display: block;
+        max-width: none;
+        width: 100%;
+        transition: transform 500ms; }
+        .insta__container__gallery__item img:hover {
+          transform: scale(1.2); }
 
 .affiliation__container {
   max-width: 960px;
@@ -875,10 +887,15 @@ section {
       flex: 1 0 50%;
       height: auto;
       padding-left: 0.25em;
-      padding-right: 0.25em; }
+      padding-right: 0.25em;
+      overflow: hidden; }
       @media (min-width: 48em) {
         .affiliation__container__affiliates__affiliate {
           flex: 1 0 25%; } }
+      .affiliation__container__affiliates__affiliate img {
+        transition: transform 250ms; }
+      .affiliation__container__affiliates__affiliate img:hover {
+        transform: scale(1.1); }
 
 .footer {
   background-color: #000;
