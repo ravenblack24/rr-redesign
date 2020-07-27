@@ -480,23 +480,24 @@ section {
       @media (min-width: 64em) {
         .header__container__logo {
           width: 10.625em; } }
-    .header__container .menu-button {
+    .header__container__menu-button {
       font-size: 1.5rem;
       background: transparent;
       position: absolute;
       border: 0;
       right: 1em;
       top: 0.3em;
-      border: 0; }
+      outline: none; }
       @media (min-width: 48em) {
-        .header__container .menu-button {
+        .header__container__menu-button {
           display: none; } }
     .header__container__nav {
       position: absolute;
-      background-color: #E9EBE9;
+      background-color: #6CB42A;
+      color: #fff;
       width: 100%;
       top: -0.75em;
-      padding: 3em 1.5em;
+      padding: 3em 2em;
       margin: 0;
       display: flex;
       flex-direction: column-reverse;
@@ -518,8 +519,9 @@ section {
         width: auto;
         position: absolute;
         top: 0.75em;
-        right: 0.75em;
-        font-size: 1.5rem; }
+        right: 1em;
+        font-size: 1.5rem;
+        outline: none; }
         @media (min-width: 48em) {
           .header__container__nav__close {
             display: none; } }
@@ -540,7 +542,7 @@ section {
             top: 3em;
             right: 0; } }
         .header__container__nav__primary li {
-          padding-bottom: 0.5em; }
+          padding-bottom: 1em; }
           @media (min-width: 48em) {
             .header__container__nav__primary li {
               text-transform: uppercase;
@@ -548,41 +550,45 @@ section {
               padding-right: 1em; } }
           @media (min-width: 64em) {
             .header__container__nav__primary li {
-              padding-right: 2.5em; } }
-          .header__container__nav__primary li:last-child {
-            padding-right: 1.75em; }
+              padding-right: 2.5em; }
+              .header__container__nav__primary li:last-child {
+                padding-right: 1.75em; } }
           .header__container__nav__primary li a {
             text-decoration: none;
             color: #000; }
           .header__container__nav__primary li a:hover,
           .header__container__nav__primary li a:focus {
             color: #fff; }
-      @media (min-width: 48em) {
-        .header__container__nav__secondary {
-          margin: 0;
-          padding: 0;
-          display: flex;
-          justify-content: space-between;
-          position: absolute;
-          top: 0;
-          right: 0; }
-          .header__container__nav__secondary li {
-            list-style: none;
-            color: #000;
-            text-transform: uppercase;
-            font-size: 0.75rem;
-            padding-right: 1.75em; }
-            .header__container__nav__secondary li a {
-              text-decoration: none;
-              color: #000; }
-            .header__container__nav__secondary li a:hover,
-            .header__container__nav__secondary li a:focus {
-              color: #fff; } }
+      .header__container__nav__secondary {
+        margin: 0;
+        padding: 1em 0 0;
+        list-style: none; }
+        @media (min-width: 48em) {
+          .header__container__nav__secondary {
+            display: flex;
+            justify-content: space-between;
+            position: absolute;
+            padding: 0;
+            top: 0.5em;
+            right: 0; } }
+        .header__container__nav__secondary li {
+          text-transform: uppercase;
+          font-size: 0.75rem;
+          padding-bottom: 1em; }
+          @media (min-width: 48em) {
+            .header__container__nav__secondary li {
+              padding-right: 1.75em; } }
+        .header__container__nav__secondary a {
+          color: #000;
+          text-decoration: none; }
+        .header__container__nav__secondary a:hover,
+        .header__container__nav__secondary a:focus {
+          color: #fff; }
 
 .hero {
   padding: 0; }
   .hero__container {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../img/graduation.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(https://scontent-lhr8-1.xx.fbcdn.net/v/t1.0-9/103465925_3155799047774321_7931167128527572311_o.jpg?_nc_cat=107&_nc_sid=730e14&_nc_ohc=qDIFbQNBi7cAX-Ib5p2&_nc_ht=scontent-lhr8-1.xx&oh=0f415359b9b9a8e64eb03e8b87b7fead&oe=5F446454);
     background-position: center;
     background-size: cover;
     padding-bottom: 1.25em;
