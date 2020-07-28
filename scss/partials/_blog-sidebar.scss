@@ -40,7 +40,15 @@
 
             &__list li {
                 padding-bottom: 0.5em;
-      
+
+                a {
+                    text-decoration: none;
+                    color: inherit;
+                }
+
+                a:hover {
+                    color: darken($dark-gray, 100%);
+                }
             }
 
             &__list li:before {
@@ -83,6 +91,10 @@
                     color: $dark-gray;
                     padding-left: 0.5em;
                 }
+
+                &__button:hover {
+                    color: darken($dark-gray, 100%);
+                }
             }
         }
 
@@ -103,6 +115,15 @@
             &__list li {
                 padding-bottom: 0.5em;
                 line-height: 1.4;
+
+                a {
+                    text-decoration: none;
+                    color: inherit;
+                }
+
+                a:hover {
+                    color: darken($dark-gray, 100%);
+                }
             }
 
             &__list li:before {
@@ -136,6 +157,15 @@
 
                     &:last-child {
                         padding-bottom: 0;
+                    }
+
+                    a {
+                        text-decoration: none;
+                        color: inherit;
+                    }
+
+                    a:hover {
+                        color: darken($dark-gray, 100%);
                     }
                 }
 

@@ -36,10 +36,12 @@ section {
     margin: 0 auto;
     display: block;
     max-width: 13em;
+    transition: background-color 500ms,
+                color 500ms,
+                border-color 500ms;
 
     &:hover,
     &:focus {
-        border-color: $green;
         color: $green;
     }
 
@@ -50,6 +52,11 @@ section {
         @media(min-width: 48em) {
             font-size: 1.2rem;
         }
+
+        &:hover,
+        &:focus {
+            border-color: $green;
+        }
     }
 
     &--green {
@@ -58,7 +65,7 @@ section {
 
         &:hover,
         &:focus {
-            border-color: $white;
+            // border-color: $white;
             color: $white;
             background-color: $green;
         }

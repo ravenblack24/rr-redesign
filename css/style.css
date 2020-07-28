@@ -388,9 +388,9 @@ section {
   font-size: 0.9rem;
   margin: 0 auto;
   display: block;
-  max-width: 13em; }
+  max-width: 13em;
+  transition: background-color 500ms, color 500ms, border-color 500ms; }
   .cta-button:hover, .cta-button:focus {
-    border-color: #85D23F;
     color: #85D23F; }
   .cta-button--large {
     padding-left: 2.5em;
@@ -398,11 +398,12 @@ section {
     @media (min-width: 48em) {
       .cta-button--large {
         font-size: 1.2rem; } }
+    .cta-button--large:hover, .cta-button--large:focus {
+      border-color: #85D23F; }
   .cta-button--green {
     border: 1px solid #85D23F;
     color: #85D23F; }
     .cta-button--green:hover, .cta-button--green:focus {
-      border-color: #fff;
       color: #fff;
       background-color: #85D23F; }
   .cta-button--white {
@@ -774,8 +775,6 @@ section {
             width: 100%;
             height: auto;
             transition: transform 500ms; }
-            .news__container__box__story__headline__image:hover {
-              transform: scale(1.2); }
           .news__container__box__story__headline__text {
             position: absolute;
             bottom: 0;
@@ -793,6 +792,8 @@ section {
             .news__container__box__story__headline__text__date {
               margin: 0;
               color: #fff; }
+        .news__container__box__story:hover .news__container__box__story__headline__image {
+          transform: scale(1.2); }
         .news__container__box__story__snippet {
           padding: 1em 1em;
           font-size: 0.875rem; }
@@ -899,6 +900,11 @@ section {
       font-size: 1rem; }
     .blog-sidebar__container__categories__list li {
       padding-bottom: 0.5em; }
+      .blog-sidebar__container__categories__list li a {
+        text-decoration: none;
+        color: inherit; }
+      .blog-sidebar__container__categories__list li a:hover {
+        color: black; }
     .blog-sidebar__container__categories__list li:before {
       content: "\f105";
       font-family: 'Font Awesome\ 5 Free';
@@ -926,6 +932,8 @@ section {
       font-size: 1.25rem;
       color: #525252;
       padding-left: 0.5em; }
+    .blog-sidebar__container__search__box__button:hover {
+      color: black; }
   .blog-sidebar__container__posts {
     padding-bottom: 1em; }
     .blog-sidebar__container__posts__title {
@@ -938,6 +946,11 @@ section {
     .blog-sidebar__container__posts__list li {
       padding-bottom: 0.5em;
       line-height: 1.4; }
+      .blog-sidebar__container__posts__list li a {
+        text-decoration: none;
+        color: inherit; }
+      .blog-sidebar__container__posts__list li a:hover {
+        color: black; }
     .blog-sidebar__container__posts__list li:before {
       content: "\f105";
       font-family: 'Font Awesome\ 5 Free';
@@ -957,6 +970,11 @@ section {
     padding-bottom: 0.5em; }
     .blog-sidebar__container__archive__years__list li:last-child {
       padding-bottom: 0; }
+    .blog-sidebar__container__archive__years__list li a {
+      text-decoration: none;
+      color: inherit; }
+    .blog-sidebar__container__archive__years__list li a:hover {
+      color: black; }
   .blog-sidebar__container__archive__years__list li:before {
     content: "\f105";
     font-family: 'Font Awesome\ 5 Free';
