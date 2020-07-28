@@ -588,7 +588,7 @@ section {
 .hero {
   padding: 0; }
   .hero__container {
-    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(https://scontent-lhr8-1.xx.fbcdn.net/v/t1.0-9/103465925_3155799047774321_7931167128527572311_o.jpg?_nc_cat=107&_nc_sid=730e14&_nc_ohc=qDIFbQNBi7cAX-Ib5p2&_nc_ht=scontent-lhr8-1.xx&oh=0f415359b9b9a8e64eb03e8b87b7fead&oe=5F446454);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(https://scontent-lhr8-1.xx.fbcdn.net/v/t1.0-9/103465925_3155799047774321_7931167128527572311_o.jpg?_nc_cat=107&_nc_sid=730e14&_nc_ohc=qDIFbQNBi7cAX-Ib5p2&_nc_ht=scontent-lhr8-1.xx&oh=0f415359b9b9a8e64eb03e8b87b7fead&oe=5F446454);
     background-position: center;
     background-size: cover;
     padding-bottom: 1.25em;
@@ -615,6 +615,16 @@ section {
         .hero__container__intro {
           max-width: 705px;
           font-size: 1.5rem; } }
+  .hero__container--short {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://www.redwayrunners.com/wp-content/uploads/2018/08/Sunday-run-5-Aug-2018.jpg);
+    height: 7.19em;
+    background-position: 0 60%; }
+    @media (min-width: 48em) {
+      .hero__container--short {
+        height: 15.625em;
+        padding-bottom: 1.5em; } }
+    .hero__container--short__mainintro {
+      margin-bottom: 0; }
 
 .quicklinks {
   background-color: #E9EBE9; }
@@ -739,7 +749,8 @@ section {
       margin-bottom: 0.75em; }
     .news__container__box {
       display: flex;
-      flex-direction: column; }
+      flex-direction: column;
+      /* Reduced num of items when displayed on blog page */ }
       @media (min-width: 48em) {
         .news__container__box {
           flex-direction: row;
@@ -785,6 +796,19 @@ section {
         .news__container__box__story__snippet {
           padding: 1em 1em;
           font-size: 0.875rem; }
+      @media (min-width: 48em) {
+        .news__container__box__story--col-2 {
+          flex: 1 0 50%;
+          padding-left: 0;
+          padding-right: 1.5em; } }
+
+@media (min-width: 48em) {
+  .news--blog {
+    padding-right: 0; } }
+
+@media (min-width: 64em) {
+  .news--blog {
+    padding-left: 0; } }
 
 .newsletter {
   background-color: #6CB42A;
@@ -845,6 +869,101 @@ section {
         @media (min-width: 48em) {
           .about__container__intro .cta-button {
             margin-left: 0; } }
+
+.col-2 {
+  max-width: 960px;
+  margin: 0 auto; }
+  @media (min-width: 48em) {
+    .col-2 {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start; } }
+
+.blog-sidebar {
+  background-color: #E9EBE9; }
+  @media (min-width: 48em) {
+    .blog-sidebar {
+      flex: 1 0 33%;
+      padding: 1.5em 1.25em; } }
+  @media (min-width: 64em) {
+    .blog-sidebar {
+      margin: 1.7em 0;
+      padding: 1.5em; } }
+  .blog-sidebar__container__categories {
+    padding-bottom: 1em; }
+    .blog-sidebar__container__categories__title {
+      color: #525252;
+      font-size: 1.5rem; }
+    .blog-sidebar__container__categories__list {
+      list-style: none;
+      font-size: 1rem; }
+    .blog-sidebar__container__categories__list li {
+      padding-bottom: 0.5em; }
+    .blog-sidebar__container__categories__list li:before {
+      content: "\f105";
+      font-family: 'Font Awesome\ 5 Free';
+      font-weight: 900;
+      display: inline-block;
+      margin-left: -2.7em;
+      width: 1.3em; }
+  .blog-sidebar__container__search__title {
+    color: #525252;
+    font-size: 1.5rem;
+    margin-bottom: 0.1em; }
+  .blog-sidebar__container__search__box {
+    margin: 0;
+    padding-bottom: 2.25em; }
+    .blog-sidebar__container__search__box__input {
+      width: 87%;
+      height: 2.5em; }
+      @media (min-width: 48em) {
+        .blog-sidebar__container__search__box__input {
+          width: 84%; } }
+      @media (min-width: 64em) {
+        .blog-sidebar__container__search__box__input {
+          width: 87%; } }
+    .blog-sidebar__container__search__box__button {
+      font-size: 1.25rem;
+      color: #525252;
+      padding-left: 0.5em; }
+  .blog-sidebar__container__posts {
+    padding-bottom: 1em; }
+    .blog-sidebar__container__posts__title {
+      color: #525252;
+      font-size: 1.5rem;
+      margin-bottom: 0.1em; }
+    .blog-sidebar__container__posts__list {
+      list-style: none;
+      font-size: 0.875rem; }
+    .blog-sidebar__container__posts__list li {
+      padding-bottom: 0.5em;
+      line-height: 1.4; }
+    .blog-sidebar__container__posts__list li:before {
+      content: "\f105";
+      font-family: 'Font Awesome\ 5 Free';
+      font-weight: 900;
+      display: inline-block;
+      margin-left: -2.7em;
+      width: 1.3em; }
+  .blog-sidebar__container__archive__title {
+    color: #525252;
+    font-size: 1.5rem;
+    margin-bottom: 0.1em; }
+  .blog-sidebar__container__archive__years__list {
+    list-style: none;
+    font-size: 1rem;
+    margin-bottom: 0; }
+  .blog-sidebar__container__archive__years__list li {
+    padding-bottom: 0.5em; }
+    .blog-sidebar__container__archive__years__list li:last-child {
+      padding-bottom: 0; }
+  .blog-sidebar__container__archive__years__list li:before {
+    content: "\f105";
+    font-family: 'Font Awesome\ 5 Free';
+    font-weight: 900;
+    display: inline-block;
+    margin-left: -2.7em;
+    width: 1.3em; }
 
 .insta {
   background-color: #E9EBE9;
