@@ -1,0 +1,134 @@
+.join {
+
+    &__intro {
+        margin: 0 auto;
+
+        &__container {
+            text-align: center;
+            max-width: 710px;
+            margin: 0 auto;
+        }
+    }
+
+    &__signup {
+        padding:0;
+
+        @media(min-width: 64rem) {
+            background: url(/img/join-signup.PNG);
+            background-repeat: no-repeat;
+            padding-bottom: 10em;
+            background-position: center;
+            padding-top: 2.5em;
+        }
+        
+        &__container {
+            outline: 1px solid $green;
+            outline-offset: -1.75em;
+            padding: 3em 2.5em;
+            text-align: center;
+            position: relative;
+            width: 100%;
+            color: $white;
+            background-color: $dark-gray;
+
+            @media(min-width: 64rem) {
+                width: 50%;
+                margin-left: -1%;
+                padding: 6.5em 5.5em 5em;
+                outline-offset: -2.75em;
+                top: -4.25em;
+                text-align: left;
+                box-shadow: 0 0 3em rgba(0,0,0,.3);
+               
+            }
+
+            &__title  {
+                background: $dark-gray;
+                position: absolute;
+                left: 50%;
+                transform: translateX(-50%);
+                top: 0.2em;
+                width: 5em;
+                padding: 0;
+                color: $green;
+
+                @media(min-width: 48rem) {
+                    top: 0;
+                }
+
+                @media(min-width: 64rem) {
+                    top: 0.35em;
+                    text-align: center;
+                }
+            }
+            
+            &__block {
+                margin: 1em 0 1em;
+                text-align: center;
+
+                @media(min-width: 48rem) {
+                    margin: 2em 0;
+                    padding: 0 3em;
+                }
+
+                @media(min-width: 64rem){
+                    margin:0 0 2em;
+                    padding:0;
+                }
+
+                & p {
+                    color: $white;
+                }
+            }
+        }
+    }
+
+    &__benefits {
+        background-color: $light-gray;
+
+        &__container {
+            text-align: center;
+            margin:0;
+            padding:0;
+
+            &__perks {
+                padding: 0 0.75em;
+                
+                ul {
+                    list-style: none;
+                    margin:0;
+                    padding: 0;
+
+                    li {
+                        margin-bottom: 1.5em;
+                        font-size: 0.875rem;
+
+                        & strong {
+                            font-size: 0.975rem;
+                        }
+
+                        a {
+                            text-decoration: none;
+                            color: $dark-gray;
+
+                            &:hover {
+                                color: darken($dark-gray, 100%);
+                            }
+                        }
+                    }
+                }
+
+            }
+            &__p {
+             font-size: 0.75rem;   
+            }  
+        }
+    }
+  
+}
+
+.container-join {
+    width: 100%;
+    max-width: 70em;
+    margin: 0 auto;
+}

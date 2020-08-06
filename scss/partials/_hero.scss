@@ -13,6 +13,7 @@
         justify-content: flex-end;
         text-align: center;
         height: calc(100vh - 65.7px);
+        
 
         @media(min-width: 48em) {
             height: calc(100vh - 109px);
@@ -54,5 +55,11 @@
         &__mainintro {
             margin-bottom: 0;  
        }
+    }
+
+    &__container--short {
+        background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../img/join.png);
+        height: 15.8em;
+        background-position: center;
     }
 }
