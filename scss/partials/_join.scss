@@ -16,9 +16,10 @@
         @media(min-width: 64rem) {
             background: url(/img/join-signup.PNG);
             background-repeat: no-repeat;
-            padding-bottom: 10em;
+            padding-bottom: 7em;
             background-position: center;
             padding-top: 2.5em;
+            
         }
         
         &__container {
@@ -88,23 +89,51 @@
 
         &__container {
             text-align: center;
-            margin:0;
+            margin:0 auto;
             padding:0;
+            max-width: 1024px;
 
             &__perks {
                 padding: 0 0.75em;
+
+                @media(min-width: 64rem) {
+                    display: flex;
+                    justify-content: space-between;
+                }
                 
                 ul {
                     list-style: none;
                     margin:0;
                     padding: 0;
+                    
+        
+
+                    @media(min-width: 64rem) {
+                        width: 45%;
+                        
+                        &:first-child {
+                            text-align: left;
+                        }
+
+                        &:last-child {
+                            text-align: right;
+                        }
+                    }
 
                     li {
                         margin-bottom: 1.5em;
                         font-size: 0.875rem;
 
+                        @media(min-width: 48rem) {
+                            font-size: 1rem;
+                        }
+
                         & strong {
                             font-size: 0.975rem;
+
+                            @media(min-width: 48rem) {
+                                font-size: 1.25rem;
+                            }
                         }
 
                         a {
@@ -124,6 +153,7 @@
             }  
         }
     }
+
   
 }
 

@@ -560,10 +560,18 @@ section {
         padding-bottom: 1.5em; } }
     .hero__container--short__mainintro {
       margin-bottom: 0; }
-  .hero__container--short {
+  .hero__container--join {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/join.png);
     height: 15.8em;
     background-position: center; }
+    @media (min-width: 48em) {
+      .hero__container--join {
+        height: 38em;
+        padding-bottom: 1.5em; } }
+    @media (min-width: 64em) {
+      .hero__container--join {
+        height: calc(90vh - 65.7px);
+        padding-bottom: 1.5em; } }
 
 .quicklinks {
   background-color: #E9EBE9; }
@@ -631,7 +639,7 @@ section {
     .join__signup {
       background: url(/img/join-signup.PNG);
       background-repeat: no-repeat;
-      padding-bottom: 10em;
+      padding-bottom: 7em;
       background-position: center;
       padding-top: 2.5em; } }
   .join__signup__container {
@@ -686,19 +694,37 @@ section {
   background-color: #E9EBE9; }
   .join__benefits__container {
     text-align: center;
-    margin: 0;
-    padding: 0; }
+    margin: 0 auto;
+    padding: 0;
+    max-width: 1024px; }
     .join__benefits__container__perks {
       padding: 0 0.75em; }
+      @media (min-width: 64rem) {
+        .join__benefits__container__perks {
+          display: flex;
+          justify-content: space-between; } }
       .join__benefits__container__perks ul {
         list-style: none;
         margin: 0;
         padding: 0; }
+        @media (min-width: 64rem) {
+          .join__benefits__container__perks ul {
+            width: 45%; }
+            .join__benefits__container__perks ul:first-child {
+              text-align: left; }
+            .join__benefits__container__perks ul:last-child {
+              text-align: right; } }
         .join__benefits__container__perks ul li {
           margin-bottom: 1.5em;
           font-size: 0.875rem; }
+          @media (min-width: 48rem) {
+            .join__benefits__container__perks ul li {
+              font-size: 1rem; } }
           .join__benefits__container__perks ul li strong {
             font-size: 0.975rem; }
+            @media (min-width: 48rem) {
+              .join__benefits__container__perks ul li strong {
+                font-size: 1.25rem; } }
           .join__benefits__container__perks ul li a {
             text-decoration: none;
             color: #525252; }

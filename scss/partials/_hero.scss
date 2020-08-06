@@ -57,9 +57,20 @@
        }
     }
 
-    &__container--short {
+    &__container--join {
         background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../img/join.png);
         height: 15.8em;
         background-position: center;
+
+        
+        @media(min-width: 48em) {
+            height: 38em;
+            padding-bottom: 1.5em;
+        }
+
+        @media(min-width: 64em) {
+            height: calc(90vh - 65.7px);
+            padding-bottom: 1.5em;
+        }
     }
 }
