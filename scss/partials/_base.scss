@@ -82,6 +82,20 @@ section {
             background-color: $white;
         }
     }
+
+    &--gray {
+        border: 1px solid $dark-gray;
+        background-color: $dark-gray;
+        color: $white;
+
+        &:hover,
+        &:focus {
+            border-color: $green;
+            color: $white;
+            background-color: $green;
+        }
+    }
 }
+
 
 
